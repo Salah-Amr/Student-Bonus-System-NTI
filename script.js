@@ -53,16 +53,16 @@ function showToast(message, classN) {
 }
 
 function updateTable() {
-  let studentTable = `<tr><td>Student Name</td>
-          <td>Attendance</td>
-          <td>Midterm</td>
-          <td>Final</td>
-          <td>Average Degree</td>
-          <td>Total Degrees</td>
-          <td colspan="2">Bonus</td>
-          <td>Final Degree</td>
-          <td>Details</td>
-          <td colspan="2">Bonus Actions</td></tr>`;
+  let studentTable = `<tr><th>Student Name</th>
+          <th>Attendance</th>
+          <th>Midterm</th>
+          <th>Final</th>
+          <th>Average Degree</th>
+          <th>Total Degrees</th>
+          <th colspan="2">Bonus</th>
+          <th>Final Degree</th>
+          <th>Details</th>
+          <th colspan="2">Bonus Actions</th></tr>`;
   for (let i = 0; i < students.length; i++) {
     let st = students[i];
     st.AverageScore = (st.midtermScore + st.finalScore + st.attendance * 2 + st.Bonus) + '%';
